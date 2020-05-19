@@ -28,4 +28,4 @@ module load singularity
 singularity exec expansionhunterdenovo_latest.sif /ExpansionHunterDenovo/scripts/outlier.py locus \
         --manifest ${FILENAME} \
         --multisample-profile broad_dataset1.multisample_profile.json \
-        --output ${FILENAME}.outlier_locus.tsvmuk
+        --output ${FILENAME}.outlier_locus.tsv
