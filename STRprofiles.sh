@@ -25,9 +25,9 @@ echo "My input file is ${FILENAME}"
 
 module load singularity
 
-basedir=/scratch/pawsey0339/sbeecroft/broad
-container=/group/pawsey0339/sbeecroft/expansion-hunter-denovo_v0.8.7.sif
-ref=Homo_sapiens_assembly38.fasta
+basedir=$(pwd)
+container=/group/pawsey0339/sbeecroft/expansionhunterdenovo_v1.sif
+ref=Homo_sapiens.GRCh37.dna.primary_assembly.fa
 singularity exec ${container} /ExpansionHunterDenovo profile \
         --reads ${basedir}/${FILENAME} \
         --reference ${ref} \
