@@ -8,4 +8,4 @@ download the docker image with singularity
 module load singularity
 singularity pull docker://boxcroft/expansionhunterdenovo:v1
 ```
-start with STRprofiles.sh, then create the [manifest file] https://github.com/Illumina/ExpansionHunterDenovo/blob/master/documentation/03_Case_control_quickstart.md]. Then merge the STR profiles using the method you want (i.e. outlier or case control). There is a script for making every sample the only case and m aking all the others controls, if you wanted to do that. 
+start with STRprofiles.sh, then create the manifest file [https://github.com/Illumina/ExpansionHunterDenovo/blob/master/documentation/03_Case_control_quickstart.md]. Then merge the STR profiles using the method you want (i.e. outlier or case control). There is a script for making every sample the only case and m aking all the others controls, if you wanted to do that. 
