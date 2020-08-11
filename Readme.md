@@ -19,13 +19,22 @@ Make the manifest file https://github.com/Illumina/ExpansionHunterDenovo/blob/ma
 ## Step 3
 Merge the STR profiles using the method you want (i.e. outlier or case control). There is a script for making every sample the only case and making all the others controls, if you want to do that. 
 ### Script explanations
-*merge.sh* --> merges the STR profiles with affection status as determined in the manifest file. Does not perform any analysis. This is the expected input for the scripts prefixed with single. 
-*rename_manifests.sh* --> creates a seperate manifest file for each sample. Using this method, each manifest has only one sample marked as 'affected' and all the rest are 'controls/unaffacted'.  This is the expected input for the scripts prefixed with multi. 
-*single_casectrl_locus.sh* --> performs case/control locus analysis on a single manifest
-*single_casectrl_motif.sh* --> performs case/control motif analysis on a single manifest
-*single_outlier_locus.sh* --> performs outlier locus analysis on a single manifest
-*single_outlier_motif.sh* --> performs outlier motif analysis on a single manifest
-*multi_casectrl_locus.sh* --> performs case/control locus analysis multiple manifests, where each manifest has only one affected individual (made from `rename_manifests.sh`)
-*multi_casectrl_motif.sh* --> performs case/control motif analysis multiple manifests, where each manifest has only one affected individual (made from `rename_manifests.sh`)
-*multi_outlier_locus.sh* --> performs outlier locus analysis on multiple manifests, where each manifest has only one affected individual (made from `rename_manifests.sh`)
-*multi_outlier_motif.sh* --> performs outlier motif analysis on multiple manifests, where each manifest has only one affected individual (made from `rename_manifests.sh`)
+`merge.sh` --> merges the STR profiles with affection status as determined in the manifest file. Does not perform any analysis. This is the expected input for the scripts prefixed with single. 
+
+`rename_manifests.sh` --> creates a seperate manifest file for each sample. Using this method, each manifest has only one sample marked as 'affected' and all the rest are 'controls/unaffacted'.  This is the expected input for the scripts prefixed with multi.
+
+`single_casectrl_locus.sh` --> performs case/control locus analysis on a single manifest
+
+`single_casectrl_motif.sh` --> performs case/control motif analysis on a single manifest
+
+`single_outlier_locus.sh` --> performs outlier locus analysis on a single manifest
+
+`single_outlier_motif.sh` --> performs outlier motif analysis on a single manifest
+
+`multi_casectrl_locus.sh` --> performs case/control locus analysis multiple manifests, where each manifest has only one affected individual (made from `rename_manifests.sh`)
+
+`multi_casectrl_motif.sh` --> performs case/control motif analysis multiple manifests, where each manifest has only one affected individual (made from `rename_manifests.sh`)
+
+`multi_outlier_locus.sh` --> performs outlier locus analysis on multiple manifests, where each manifest has only one affected individual (made from `rename_manifests.sh`)
+
+`multi_outlier_motif.sh` --> performs outlier motif analysis on multiple manifests, where each manifest has only one affected individual (made from `rename_manifests.sh`)
