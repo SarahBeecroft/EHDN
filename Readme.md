@@ -17,9 +17,12 @@ Make STR profiles for your input samples (and controls if necessary) using `STRp
 Make the manifest file https://github.com/Illumina/ExpansionHunterDenovo/blob/master/documentation/03_Case_control_quickstart.md 
 
 ## Step 3
-Merge the STR profiles using the method you want (i.e. outlier or case control). There is a script for making every sample the only case and making all the others controls, if you want to do that. 
+Merge the STR profiles using merge.sha
+
+## Step 4
+perform the wanted analysis (i.e. outlier or case control). There is a script for making every sample the only case and making all the others controls, if you want to do that. this requires `rename_manifests.sh`.
 ### Script explanations
-`merge.sh` --> merges the STR profiles with affection status as determined in the manifest file. Does not perform any analysis. This is the expected input for the scripts prefixed with single. 
+`merge.sh` --> merges the STR profiles to create one large profile. Does not perform any analysis.
 
 `rename_manifests.sh` --> creates a seperate manifest file for each sample. Using this method, each manifest has only one sample marked as 'affected' and all the rest are 'controls/unaffacted'.  This is the expected input for the scripts prefixed with multi.
 
