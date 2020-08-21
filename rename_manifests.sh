@@ -10,6 +10,6 @@ manifest_file=$1
 
 for num in {1..33}
 do
-prefix=$(awk -v a="$num" 'NR==a{print $1}' manifest_file)
+prefix=$(awk -v a="$num" 'NR==a{print $1}' $manifest_file)
 sed "${num}s/control/case/" $manifest_file > $prefix.manifest.tsv
 done
