@@ -26,7 +26,9 @@ echo "My input file is ${FILENAME}"
 
 module load singularity
 
-singularity exec expansionhunterdenovo_latest.sif /ExpansionHunterDenovo/scripts/casecontrol.py locus \
+container=/group/pawsey0339/sbeecroft/expansionhunterdenovo_v1.sif
+
+singularity exec $container /ExpansionHunterDenovo-v0.8.7-linux_x86_64/scripts/casecontrol.py locus \
         --manifest ${FILENAME} \
         --multisample-profile broad_dataset1.multisample_profile.json \
         --output ${FILENAME}.outlier_locus.tsv
