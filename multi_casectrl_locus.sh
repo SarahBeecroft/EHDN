@@ -2,12 +2,12 @@
 #SBATCH --nodes=1
 #SBATCH --cpus-per-task=1
 #SBATCH --time=00:10:00
-#SBATCH --job-name=batch_outlier_locus
+#SBATCH --job-name=batch_CC_locus
 #SBATCH --partition=workq
 #SBATCH --account=pawsey0001
-#SBATCH --output=batch_outlier_locus-%j.log
-#SBATCH --error=batch_outlier_locus-%J.log
-#SBATCH --array=1-34
+#SBATCH --output=batch_CC_locus-%j.log
+#SBATCH --error=batch_CC_locus-%J.log
+#SBATCH --array=0-34
 
 echo "All jobs in this array have:"
 echo "- SLURM_ARRAY_JOB_ID=${SLURM_ARRAY_JOB_ID}"
