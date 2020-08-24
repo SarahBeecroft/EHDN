@@ -1,7 +1,7 @@
 #!/bin/bash
 #SBATCH --nodes=2
 #SBATCH --cpus-per-task=1
-#SBATCH --time=24:00:00
+#SBATCH --time=3:00:00
 #SBATCH --job-name=cram-str
 #SBATCH --partition=workq 
 #SBATCH --account=pawsey0001
